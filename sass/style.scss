@@ -1,0 +1,50 @@
+$primary: #AF6D44;
+$secondary: #E6B68B;
+$drop1: #E8CDA1;
+$drop2: #FFEDBA;
+
+//Estilos para los dropdown del nav
+.drop1 {
+    background-color: $drop1 !important;
+}
+.drop1:hover {
+    background-color: darken($drop1, 10%) !important;
+}
+.drop1:active {
+    color: black !important;
+}
+.drop2 {
+    background-color: $drop2 !important;
+}
+.drop2:hover {
+    background-color: darken($drop2, 10%) !important;
+}
+.drop2:active {
+    color: black !important;
+}
+
+//Imagen de fondo libros
+.bg {
+    position: absolute;
+}
+
+//Ocultar libros
+#cientifico, #lenguaje, #linguistico, #artistico, #CSociales, #zonaLibre {
+    display: none;
+}
+
+//Arreglos
+.textFooter {
+    color: #ccdeff;
+}
+footer {
+    position: relative;
+    top: -25px;
+}
+.btn:focus{
+    background-color: $primary !important;
+    border: none !important;
+    box-shadow: 0 0 0 black !important;
+}
+
+@import "bootstrap/bootstrap";
