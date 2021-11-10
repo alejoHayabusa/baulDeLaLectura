@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--Header para cambiar el tamaño de las imagenes, cambiar los valores de width=""-->
+    <div class="container-fluid">
+        <header class="row bg-primary">
+            <!--Imagen Logo-->
+            <div class="col-5">
+                <img src="img/logo.png" class="img-fluid" width="25%">
+            </div>
+
+            <!--Imagen escudo y logos de redes sociales-->
+            <div class="col-7 text-right">
+                <img src="img/escudo.png" class="img-fluid mx-5" width="15%">
+
+                <img src="img/whatsapp.png" class="img-fluid mt-1" width="11%">
+                <img src="img/facebook.png" class="img-fluid mx-2 mt-1" width="10%">
+                <img src="img/twitter.png" class="img-fluid mt-1 mr-5" width="10%">
+            </div>
+        </header>
+    </div>
+
+    <!--Nav-->
+    <ul class="nav nav-fill navbar nav-justified bg-secondary">
+        <!--Inicio-->
+        <li class="nav-item text-left">
+          <a class="nav-link active text-dark" href="index.html">Inicio</a>
+        </li>
+
+        <!--Componentes-->
+        <li class="nav-item dropdown text-left">
+            <a class="text-dark nav-link dropdown-toggle" href="#" id="componenteDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Componentes
+            </a>
+            <div class="dropdown-menu p-0" aria-labelledby="componenteDropdown">
+              <a class="dropdown-item drop1" href="#" onClick="cientifico()">Cientifico</a>
+              <a class="dropdown-item drop2" href="#" onClick="linguistico()">Lingüístico</a>
+              <a class="dropdown-item drop1" href="#" onClick="artistico()">Artístico</a>
+              <a class="dropdown-item drop2" href="#" onClick="lenguaje()">Lenguaje</a>
+              <a class="dropdown-item drop1" href="#" onClick="CSociales()">Ciencias Sociales</a>
+            </div>
+        </li>
+
+        <!--Zona Libre-->
+        <li class="nav-item text-left">
+          <a class="text-dark nav-link" href="#" onClick="zonaLibre()">Zona Libre</a>
+        </li>
+
+        <!--Contacto-->
+        <li class="nav-item dropdown text-left">
+            <a class="text-dark nav-link dropdown-toggle" href="#" id="contactoDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              Contacto
+            </a>
+            <div class="dropdown-menu p-0" aria-labelledby="contactoDropdown">
+              <a class="dropdown-item drop1" href="#">Personal</a>
+            </div>
+        </li>
+    </ul>
+
+    <!--Libros-->
+    <img src="img/background.jpg" class="img-fluid bg" width="100%">
+    <div class="container-fluid">
+      <section class="row p-4 p-lg-5 m-lg-3">
+        <h4 id="TLibros" class="col-12 text-center text-white"><strong>Libros Más Impotantes</strong></h4>
+
+        <!--LIbros inicio-->
+        <div id="inicio" class="col-12">
+        <div class="row">
+
+        <!--Libro 1-->
+        <article class="col-4">
+          <!-- Libro que al dar click activa el modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#libro1">
+            <img src="img/libro.png" width="100%">
+          </button>
+
+          <p class="text-center"><strong>Nombre libro 1</strong></p>
+
+          <!-- Modal Información al dar click en el libro-->
+          <div class="modal fade" id="libro1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  
+                  <!--Titulo al abrir del libro-->
+                  <h5 class="modal-title" id="staticBackdropLabel">Libro 1</h5>
+
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <!--Pdf cambiar src=""-->
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!--Libro 2-->
+        <article class="col-4">
+          <!-- LIbro que al dar click activa el modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#libro2">
+            <img src="img/libro.png" width="100%">
+          </button>
+
+          <p class="text-center"><strong>Nombre libro 2</strong></p>
+
+          <!-- Modal Información al dar click en el libro-->
+          <div class="modal fade" id="libro2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Libro 2</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <!--Pdf cambiar src=""-->
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!--Libro 3-->
+        <article class="col-4">
+          <!-- LIbro que al dar click activa el modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#libro3">
+            <img src="img/libro.png" width="100%">
+          </button>
+
+          <p class="text-center"><strong>Nombre libro 3</strong></p>
+
+          <!-- Modal Información al dar click en el libro-->
+          <div class="modal fade" id="libro3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">Libro 3</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+
+                <!--Pdf cambiar src=""-->
+                <div class="modal-body">
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        </div>
+        </div>
+        
+        <!--LIbros Cientifico-->
+        <div id="cientifico" class="col-12">
+          <div class="row">
+  
+          <!--Libro cietifico 1-->
+          <article class="col-4">
+            <!-- Libro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cientifico1">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Cientifico 1</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="cientifico1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <!--Titulo al abrir del libro-->
+                    <h5 class="modal-title" id="staticBackdropLabel">Cientifico 1</h5>
+  
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro cientifico 2-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cientifico2">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Cientifico 2</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="cientifico2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Cientifico 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro cientifico 3-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cientifico3">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Cientifico 3</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="cientifico3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Cientifico 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <!--Pdf cambiar src=""-->
+                    <div class="modal-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          </div>
+          </div>
+
+        <!--LIbros Linguistico-->
+        <div id="linguistico" class="col-12">
+          <div class="row">
+  
+          <!--Libro linguistico 1-->
+          <article class="col-4">
+            <!-- Libro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#linguistico1">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Lingüístico 1</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="linguistico1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <!--Titulo al abrir del libro-->
+                    <h5 class="modal-title" id="staticBackdropLabel">Lingüístico 1</h5>
+  
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro Linguistico 2-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#linguistico2">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Lingüístico 2</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="linguistico2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Lingüístico 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro linguistico 3-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#linguistico3">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Lingüístico 3</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="linguistico3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Lingüístico 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <!--Pdf cambiar src=""-->
+                    <div class="modal-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          </div>
+          </div>
+
+        <!--Libros Artistico-->
+        <div id="artistico" class="col-12">
+          <div class="row">
+  
+          <!--Libro artistico 1-->
+          <article class="col-4">
+            <!-- Libro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#artistico1">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Artístico 1</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="artistico1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <!--Titulo al abrir del libro-->
+                    <h5 class="modal-title" id="staticBackdropLabel">Artístico 1</h5>
+  
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro artistico 2-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#artistico2">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Artístico 2</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="artistico2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Artístico 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro artistico 3-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#artistico3">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Artístico 3</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="artistico3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Artístico 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <!--Pdf cambiar src=""-->
+                    <div class="modal-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          </div>
+          </div>
+
+        <!--Libros lenguaje-->
+        <div id="lenguaje" class="col-12">
+          <div class="row">
+  
+          <!--Libro lenguaje 1-->
+          <article class="col-4">
+            <!-- Libro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lenguaje1">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Lengüaje 1</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="lenguaje1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <!--Titulo al abrir del libro-->
+                    <h5 class="modal-title" id="staticBackdropLabel">Lengüaje 1</h5>
+  
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro lenguaje 2-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lenguaje2">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Lengüaje 2</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="lenguaje2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Lengüaje 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro lenguaje 3-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#lenguaje3">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Lengüaje 3</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="lenguaje3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Lengüaje 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <!--Pdf cambiar src=""-->
+                    <div class="modal-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          </div>
+          </div>
+
+        <!--Libros Ciencias Sociales-->
+        <div id="CSociales" class="col-12">
+          <div class="row">
+  
+          <!--Libro ciencias sociales 1-->
+          <article class="col-4">
+            <!-- Libro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CSociales1">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Ciencias Sociales 1</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="CSociales1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <!--Titulo al abrir del libro-->
+                    <h5 class="modal-title" id="staticBackdropLabel">Ciencias Sociales 1</h5>
+  
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro Ciencias Sociales 2-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CSociales2">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Ciencias Sociales 2</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="CSociales2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Ciencias Sociales 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro Ciencias Sociales 3-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#CSociales3">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Ciencias Sociales 3</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="CSociales3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Ciencias Sociales 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <!--Pdf cambiar src=""-->
+                    <div class="modal-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          </div>
+          </div>
+
+          <!--Libros zona LIbre-->
+        <div id="zonaLibre" class="col-12">
+          <div class="row">
+  
+          <!--Libro zona libre 1-->
+          <article class="col-4">
+            <!-- Libro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#zonaLibre1">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Zona Libre 1</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="zonaLibre1" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    
+                    <!--Titulo al abrir del libro-->
+                    <h5 class="modal-title" id="staticBackdropLabel">Zona Libre 1</h5>
+  
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Libro zona libre 2-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#zonaLibre2">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Zona Libre 2</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="zonaLibre2" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Zona Libre 2</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+  
+          <!--Zona Libre 3-->
+          <article class="col-4">
+            <!-- LIbro que al dar click activa el modal -->
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#zonaLibre3">
+              <img src="img/libro.png" width="100%">
+            </button>
+  
+            <p class="text-center"><strong>Zona Libre 3</strong></p>
+  
+            <!-- Modal Información al dar click en el libro-->
+            <div class="modal fade" id="zonaLibre3" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Zona Libre 3</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+  
+                  <!--Pdf cambiar src=""-->
+                  <div class="modal-body">
+                    <!--Pdf cambiar src=""-->
+                    <div class="modal-body">
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="Documents/..." allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          </div>
+          </div>
+      </section>
+
+      <!--footer-->
+      <footer class="bg-primary row py-5">
+        <!--Pascual Bravo-->
+        <div class="col-4 mt-0">
+          <img src="img/pascualBravo.png" class="img-fluid" width="100%">
+        </div>
+
+        <!--Contactos-->
+        <div class="col-4">
+          <ul>
+            <li><strong>Teléfono: </strong>*******</li>
+            <li><strong>Correo: </strong>*******</li>
+            <li><strong>Dirección: </strong>*******</li>
+          </ul>
+        </div>
+
+        <!--Logos-->
+        <div class="col-4 text-right">
+          <img src="img/whatsapp.png" class="img-fluid mt-1" width="20%">
+          <img src="img/facebook.png" class="img-fluid mx-2 mt-1" width="18%">
+          <img src="img/twitter.png" class="img-fluid mt-1 mr-5" width="18%">
+        </div>
+
+        <div class="col-12 text-center">
+          Iconos diseñados por <a class="textFooter" href="https://www.flaticon.es/autores/hight-quality-icons" title="Hight Quality Icons">Hight Quality Icons </a> y <a class="textFooter" href="https://www.flaticon.es/autores/laisa-islam-ani" title="Laisa Islam Ani">Laisa Islam Ani</a> from <a class="textFooter" href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+        </div>
+      </footer>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+<script src="js/libros.js" type="text/javaScript"></script>
+</html>
